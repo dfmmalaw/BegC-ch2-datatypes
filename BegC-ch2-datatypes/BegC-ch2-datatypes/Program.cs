@@ -10,6 +10,9 @@ namespace BegC_ch2_datatypes
     {
         static void Main(string[] args)
         {
+            const string TITLE = "* Fun facts about Venus *";
+            Console.WriteLine(TITLE);
+
             // variable declerations and initialization (assignment)
             int venusMoonCount = 0;
             float windSpeed = 450.0f;
@@ -23,7 +26,15 @@ namespace BegC_ch2_datatypes
 
             Console.WriteLine(windSpeed + " miles/hour.");
 
+            const float KM_PER_MILE = 1.609f;
+            windSpeed = windSpeed * KM_PER_MILE;
+            Console.Write("Venusian windspeed = ");
+            Console.WriteLine(windSpeed + " km/hr.");
+
+
             Console.ReadLine();
+
+            
         }
     }
 }
